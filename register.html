@@ -35,7 +35,7 @@
   </div>
 </form>
 <script>
-    let host = "http://localhost:8080"
+    let host = "https://diner-pancakehouse-latest-mxd5.onrender.com"
     async function addUser(){
         let message = "";
         let customerEmail = document.getElementById("email").value;
@@ -57,7 +57,7 @@
         };
 
         try {
-            let response = await fetch("http://localhost:8080/signup", request);
+            let response = await fetch("https://diner-pancakehouse-latest-mxd5.onrender.com/signup", request);
             if (response.ok) {
                 message = "User signed up successfully!";
             } else {
